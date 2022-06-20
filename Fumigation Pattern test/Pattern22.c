@@ -1,4 +1,3 @@
-
 /*
 X X
 _ X X
@@ -13,16 +12,16 @@ _ _ _ X X X X X X X X
 
 #include <stdio.h>
     int main(){
-        int i,j,k;
-        for(i=0; i<=3; i++){
-            for(j=0; j<i; j++){
+        int i,j,k,m=2;;
+        for(i=1; i<=4; i++){
+            for(j=0; j<i && i!=4; j++){
                 printf("X X \n");
             }
-            for(k=0; k<i; k++){
+            for(k=0; k<i && i!=3; k++){
                 printf("_ ");
             }
-            for(j=1; j<=(i*2-2); j++){
-                printf("X X ");
+            for(j=0; (j<i*m && i!=3); j++){
+                printf("X ");
             }
             printf("\n");
         }
